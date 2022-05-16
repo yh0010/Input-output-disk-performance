@@ -1,0 +1,82 @@
+============Question 1==============
+Write file with block size: 1024, block count: 1024000
+Done writing.
+file size: 1000.000000 MB
+total time spent: 5.126862 seconds
+speed: 195.051086 MB/S
+
+Read the file created
+The result of the xor calculation: 20ed974a
+Done reading.
+file size: 1000.000000 MB
+total time spent: 3.237778 seconds
+speed: 308.853788 MB/S
+
+Read half of the file
+The result of the xor calculation: 23b7f65d
+Done reading.
+file size: 500.000000 MB
+total time spent: 1.603357 seconds
+speed: 311.845709 MB/S
+
+============Question 2-5=============
+Write file with reasonable size
+Done writing.
+file size: 2000.000000 MB
+total time spent: 8.332545 seconds
+speed: 240.022706 MB/S
+
+Read the file created
+The result of the xor calculation: 365029a3
+Done reading.
+file size: 2000.000000 MB
+total time spent: 6.413839 seconds
+speed: 311.825726 MB/S
+
+==============Caching================
+Cache cleared, read the file with 1024 block size
+The result of the xor calculation: 365029a3
+Done reading.
+file size: 2000.000000 MB
+total time spent: 9.791565 seconds
+speed: 204.257440 MB/S
+
+Read the file with the same block size again
+The result of the xor calculation: 365029a3
+Done reading.
+file size: 2000.000000 MB
+total time spent: 6.358135 seconds
+speed: 314.557649 MB/S
+
+=============Small block=============
+Write a small file for quicker reading
+Done writing.
+file size: 0.097656 MB
+total time spent: 0.001113 seconds
+speed: 87.741465 MB/S
+
+Read the file file block size equals to 1
+The result of the xor calculation: 9d
+Done reading.
+file size: 0.097656 MB
+total time spent: 0.061473 seconds
+speed: 1.588604 MB/S
+system call speed: 1665771.964928 B/S
+
+Use lseek to get better system call speed
+Done seeking.
+file size: 0.097656 MB
+total time spent: 0.043054 seconds
+speed: 2.268227 MB/S
+system call speed: 2378408.510243 B/S
+
+============Extra Credit=============
+Read the file with dd command with bs=1024
+
+=============Question 6==============
+See the optimized performance
+The result of the xor calculation: 365029a3
+Done reading.
+file size: 2000.000000 MB
+total time spent: 3.767423 seconds
+speed: 530.866855
